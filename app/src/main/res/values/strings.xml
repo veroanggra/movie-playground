@@ -3,4 +3,8 @@
     <string name="hello_ardian">Hello Ardian</string>
     <string name="watch_your_favorite_movie">Watch your favorite movie</string>
     <string name="search">Search</string>
+    <string name="category">Category</string>
+    <string name="see_all"><![CDATA[See all >]]></string>
+    <string name="genre">genre</string>
+    <string name="romance">Romance</string>
 </resources>
