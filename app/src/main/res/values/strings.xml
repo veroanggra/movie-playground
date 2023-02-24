@@ -7,4 +7,6 @@
     <string name="see_all"><![CDATA[See all >]]></string>
     <string name="genre">genre</string>
     <string name="romance">Romance</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
