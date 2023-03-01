@@ -2,9 +2,18 @@ package com.veroanggra.movieplayground.data
 
 data class MovieResponse(
     val Response: String,
-    val Search: List<Search>,
+    val Search: List<Movie>,
     val totalResults: String
 )
+
+data class Movie(
+    val Poster: String,
+    val Title: String,
+    val Type: String,
+    val Year: String,
+    val imdbID: String
+)
+
 //data class MovieResponse(
 //    val page: Int,
 //    val totalPages: Int,
