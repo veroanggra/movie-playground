@@ -1,97 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
+    <data></data>
 
-    <TextView
-        android:id="@+id/tv_welcome"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/common_margin"
-        android:layout_marginTop="@dimen/common_margin"
-        android:layout_marginEnd="@dimen/common_margin"
-        android:text="@string/hello_ardian"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tv_text"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/common_margin"
-        android:layout_marginTop="@dimen/inline_margin"
-        android:layout_marginEnd="@dimen/common_margin"
-        android:text="@string/watch_your_favorite_movie"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_welcome" />
+        <TextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_margin"
+            android:layout_marginTop="@dimen/common_margin"
+            android:layout_marginEnd="@dimen/common_margin"
+            android:text="@string/hello_ardian"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/et_layout_search"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="@dimen/common_margin"
-        android:layout_marginTop="@dimen/common_margin"
-        android:layout_marginEnd="@dimen/common_margin"
-        app:boxCornerRadiusBottomEnd="15dp"
-        app:boxCornerRadiusBottomStart="15dp"
-        app:boxCornerRadiusTopEnd="15dp"
-        app:boxCornerRadiusTopStart="15dp"
-        app:boxStrokeWidth="0dp"
-        app:boxStrokeWidthFocused="0dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_text">
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_margin"
+            android:layout_marginTop="@dimen/inline_margin"
+            android:layout_marginEnd="@dimen/common_margin"
+            android:text="@string/watch_your_favorite_movie"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_welcome" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/et_search"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:drawableEnd="@drawable/outline_search_24"
-            android:drawablePadding="10dp"
-            android:hint="@string/search" />
-    </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_layout_search"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="@dimen/common_margin"
+            android:layout_marginTop="@dimen/common_margin"
+            android:layout_marginEnd="@dimen/common_margin"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_text">
 
-    <TextView
-        android:id="@+id/tv_category"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/category"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/tv_seeall"
-        app:layout_constraintStart_toStartOf="@+id/et_layout_search"
-        app:layout_constraintTop_toBottomOf="@+id/et_layout_search" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableEnd="@drawable/outline_search_24"
+                android:drawablePadding="10dp"
+                android:hint="@string/search" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/tv_seeall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/see_all"
-        android:textColor="@color/yellow"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_category"
-        app:layout_constraintEnd_toEndOf="@+id/et_layout_search"
-        app:layout_constraintTop_toTopOf="@+id/tv_category" />
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/category"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tv_seeall"
+            app:layout_constraintStart_toStartOf="@+id/et_layout_search"
+            app:layout_constraintTop_toBottomOf="@+id/et_layout_search" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_genre"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_category"
-        tools:listitem="@layout/item_genre" />
+        <TextView
+            android:id="@+id/tv_seeall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/see_all"
+            android:textColor="@color/yellow"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_category"
+            app:layout_constraintEnd_toEndOf="@+id/et_layout_search"
+            app:layout_constraintTop_toTopOf="@+id/tv_category" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_genre"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_category"
+            tools:listitem="@layout/item_genre" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

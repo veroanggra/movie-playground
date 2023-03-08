@@ -1,4 +1,4 @@
-package com.veroanggra.movieplayground.ui.catalogue
+package com.veroanggra.movieplayground.feature.catalogue
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
