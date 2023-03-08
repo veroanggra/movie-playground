@@ -1,14 +1,15 @@
-package com.veroanggra.movieplayground.ui.catalogue
+package com.veroanggra.movieplayground.feature.catalogue
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.veroanggra.movieplayground.R
+import com.veroanggra.movieplayground.databinding.FragmentMovieBinding
 
 
 class MovieFragment : Fragment() {
+    lateinit var bindingMovie : FragmentMovieBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,6 +20,7 @@ class MovieFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_movie, container, false)
+       bindingMovie= FragmentMovieBinding.inflate(inflater, container, false)
+        return bindingMovie.root
     }
 }

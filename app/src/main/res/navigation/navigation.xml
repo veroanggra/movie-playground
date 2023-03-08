@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/movieFragment"
-        android:name="com.veroanggra.movieplayground.ui.catalogue.MovieFragment"
+        android:name="com.veroanggra.movieplayground.feature.catalogue.MovieFragment"
         android:label="fragment_movie"
         tools:layout="@layout/fragment_movie" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.veroanggra.movieplayground.ui.detail.DetailFragment"
+        android:name="com.veroanggra.movieplayground.feature.detail.DetailFragment"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" />
 </navigation>
